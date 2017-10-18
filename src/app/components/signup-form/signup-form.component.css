@@ -1,0 +1,29 @@
+.example-container {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 300px;
+    width: 300px;
+    background: white;
+    margin: 3em;
+}
+
+.wrapper {
+    height: 100vh;
+    background: url('https://unsplash.it/1200/800');
+    display: grid;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+button {
+    width:100%;
+}
+
+button:disabled {
+    background-color:#fff;
+    color: #999;
+    cursor: not-allowed;
+}

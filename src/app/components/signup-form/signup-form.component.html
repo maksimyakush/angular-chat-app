@@ -1,0 +1,22 @@
+<div class="wrapper">
+
+<div class="example-container">
+  <h1>Sign Up</h1>
+  <form #signupForm="ngForm">
+<mat-form-field>
+      <input matInput placeholder="Email" name="email"  [(ngModel)]='email' required>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <input type='password' matInput placeholder="Password" name="password" [(ngModel)]='password' required>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <input type='text' matInput placeholder="Name"[(ngModel)]='displayName' name='displayName' required>
+    </mat-form-field>
+        <button type="submit" mat-button  [disabled]="!signupForm.form.valid"  (click)="signUp()">Sign Up</button>
+  </form>
+    
+    
+  </div>
+</div>

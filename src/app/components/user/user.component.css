@@ -1,0 +1,10 @@
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    width: 90%;
+    margin: 1em;
+    background: white;
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.26), 0 3px 6px rgba(0,0,0,0.23);
+}
+

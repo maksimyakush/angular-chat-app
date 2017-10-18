@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <ul>
+    <li *ngFor = 'let user of users | async'>
+        <app-user [user] = 'user'></app-user>    
+    </li>
+  </ul>
+</div>
