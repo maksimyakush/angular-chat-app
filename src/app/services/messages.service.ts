@@ -22,7 +22,8 @@ name;
       if(data) {
         this.email = data.email;
       this.key = data.uid;
-      this.db.collection('messages').valueChanges().subscribe(res=>this.name = data.displayName)
+      this.name = data.displayName
+      
       console.log(data)
       }
     });

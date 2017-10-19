@@ -1,0 +1,7 @@
+<ul class="container">
+<li class="wrapper" *ngFor="let item of list | async">
+<p>{{score}}</p>
+<button (click)="UpOne()" [disabled]='this.turn == this.id' >UpOne</button>
+<button (click)="reset()">Reset</button>
+</li>
+</ul>

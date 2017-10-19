@@ -22,6 +22,9 @@ export class AuthService {
       this.db.doc(`users/${res.uid}`).set({
         email,password, userName:displayName, key:res.uid,
       })
+      this.db.doc(`users/${res.uid}/game/${res.uid}`).set({
+        yourTurn: true,
+      })
     })
     .then(res=>this.router.navigate(['chatroom']))
    }

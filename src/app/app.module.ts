@@ -27,6 +27,7 @@ import { SignupFormComponent } from './components/signup-form/signup-form.compon
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule, MatButtonModule} from '@angular/material';
+import { TicTacToeComponent } from './components/tic-tac-toe/tic-tac-toe.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import {MatInputModule, MatButtonModule} from '@angular/material';
     UserComponent,
     LoginFormComponent,
     SignupFormComponent,
+    TicTacToeComponent,
   ],
   imports: [
     BrowserModule,
